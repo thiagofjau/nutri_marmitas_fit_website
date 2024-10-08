@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri Marmitas Fit Jaú</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            /* padding: 20px 0; */
+            text-align: center;
+            /* height: 100px; */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #388e3c;
+            padding: 10px 0;
+            gap: 50px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 100px 20px;
+            background-image: url('./assets/img/bgmarmita.jfif');
+            background-position: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+            background-attachment: fixed;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            font-family: 'Handlee', cursive;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        div.planos:hover,
+        div.consultoria:hover,
+        div.receitas:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            max-width: 250px;
+            max-height: 350px;
+        }
+
+        .ul-emoji-marmitas {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            border-radius: 50%;
+            height: 150px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .card-img {
+            border-radius: 10px;
+            height: 50%;
+            display: block;
+        }
+
+        footer {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handlee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+
+        <img class="logo" src="./assets/img/logomarmita.png" alt="Logo marmita fit em Jaú">
+
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="https://api.whatsapp.com/send/?phone=5514996959357&amp;text=Olá!+Gostaria+de+informações+e+valores+das+marmitas.+Vim+pelo+site.%20" target="_blank">Contato</a>
+    </nav>
+    <section id="home" class="hero">
+        <h1>Nutri Marmitas Fit Jaú</h1>
+        <ul class="ul-emoji-marmitas">
+            <li>🥦Marmitas Fit Personalizadas</li>
+            <li>🥕Entregas em Jaú</li>
+            <li>🌽Alimentos in natura e sem conservantes</li>
+            <li>🧅Consulte nosso cardápio a pronta entrega</li>
+            <li>🍉Horário comercial</li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos dedicados a promover uma alimentação saudável e balanceada para todos.</p>
+    </section>
+    <section id="services" class="content">
+        <div class="consultoria">
+            <h3>Consultoria Nutricional</h3>
+            <p>Oferecemos consultoria personalizada para ajudar você a alcançar seus objetivos de saúde.</p>
+        </div>
+        <div class="receitas">
+            <h3>Receitas Saudáveis</h3>
+            <p>Trabalhamos com receitas deliciosas e saudáveis para todas as refeições do dia.</p>
+        </div>
+        <div class="planos">
+            <h3>Planos Alimentares</h3>
+            <p>Desenvolvemos planos alimentares personalizados para atender às suas necessidades.</p>
+        </div>
+    </section>
+    <h2 style="text-align: center;">Conheça Nosso Combos</h2>
+    <section id="pricing" class="content">
+        <div class="card">
+            <img class="card-img" src="./assets/img/imgmarmita1.jpg" alt="Prato 1"
+                style="width:100%; border-radius: 10px;">
+            <h3>Prato 1</h3>
+            <p>Descrição do prato 1. Delicioso e saudável.</p>
+            <p><strong>R$ 25,00</strong></p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assets/img/imgmarmita1.jpg" alt="Prato 1"
+                style="width:100%; border-radius: 10px;">
+            <h3>Prato 2</h3>
+            <p>Descrição do prato 2. Saboroso e nutritivo.</p>
+            <p><strong>R$ 30,00</strong></p>
+        </div>
+        <div class="card">
+            <img class="card-img" src="./assets/img/imgmarmita1.jpg" alt="Prato 1"
+                style="width:100%; border-radius: 10px;">
+            <h3>Prato 3</h3>
+            <p>Descrição do prato 3. Perfeito para sua dieta.</p>
+            <p><strong>R$ 35,00</strong></p>
+        </div>
+    </section>
+    <!-- <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato no Whatsapp para mais informações.</p> -->
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=5514996959357&amp;text=Olá!+Gostaria+de+informações+e+valores+das+marmitas.+Vim+pelo+site.%20"
+            style="position:fixed;width:61px;height:54px;padding-top: 9px ;bottom:28px;right:16px;background-color:green;color:#FFF;border-radius:50%;text-align:center;font-size:45px;box-shadow: 1px 1px 2px #888;
+              z-index:1000; line-height: 0px; " target="_blank"><i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
+    <!-- </section> -->
+    <footer>
+        <p>&copy; 2024 Nutri Marmitas Fit Jaú. Todos os direitos reservados. <br>
+            <span style="font-size: small;">Desenvolvido por Thiago Figueredo.</span>
+        </p>
+    </footer>
+</body>
+
+</html>
